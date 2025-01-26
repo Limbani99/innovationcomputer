@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- Logo on the left -->
+    <a class="navbar-brand" href="#">Innovation Computer Care</a>
+    
+    <!-- Navbar Toggle (for mobile view) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#hpart">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#abpart">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#s1part">Service 1</a></li>
+            <li><a class="dropdown-item" href="#s2part">Service 2</a></li>
+            <li><a class="dropdown-item" href="#s3part">Service 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cpart">Contact Us</a>
+        </li>
+      </ul>
+      
+      <!-- Get Started button on the right -->
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" id="hpart">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGhhcmR3YXJlfGVufDB8fDB8fHww" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhhcmR3YXJlfGVufDB8fDB8fHww" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1596658591534-591d75e2f2f7?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="my hakdhIDHAIDGHIAFDA">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- About Us Section -->
+<section class="about-section" id="abpart">
+  <div class="container">
+      <div class="row align-items-center">
+          <!-- Left Side: Heading and Tabs -->
+          <div class="col-lg-6">
+              <h2>About Us</h2>
+              <ul class="nav nav-tabs" id="aboutTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="company-tab" data-bs-toggle="tab" href="#company" role="tab" aria-controls="company" aria-selected="true">Our Company</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="vision-tab" data-bs-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Our Vision</a>
+                  </li>
+              </ul>
+              <div class="tab-content" id="aboutTabContent">
+                  <!-- Tab Content - Our Company -->
+                  <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+                      <h4>Our Company</h4>
+                      <p>We are a leading company in our industry, committed to providing excellent products and services to our customers.</p>
+                      <a href="#spart" class="btn btn-primary btn-learn-more">Learn More</a>
+                  </div>
+
+                  <!-- Tab Content - Our Mission -->
+                  <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                      <h4>Our Mission</h4>
+                      <p>Our mission is to innovate and inspire, providing solutions that make a real impact on society and the environment.</p>
+                      <a href="#s4part" class="btn btn-primary btn-learn-more">Learn More</a>
+                  </div>
+
+                  <!-- Tab Content - Our Vision -->
+                  <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                      <h4>Our Vision</h4>
+                      <p>Our vision is to be recognized globally as a leader in our field, setting the standard for quality, integrity, and innovation.</p>
+                      <a href="#s6part" class="btn btn-primary btn-learn-more">Learn More</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Right Side: Image -->
+          <div class="col-lg-6">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Us Image" class="img-fluid">
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Our Computer Repairing Services Section -->
+<section class="our-services py-5" id="spart">
+  <div class="container">
+      <!-- Main Heading and Paragraph -->
+      <div class="text-center mb-5" >
+          <h2>Our Computer Repairing Services</h2>
+          <p class="lead">We offer reliable and affordable computer repair services for all types of devices. Whether it’s hardware issues, software glitches, or system optimization, our experts are here to fix your problems and ensure smooth performance.</p>
+      </div>
+
+      <!-- Services Boxes -->
+      <div class="row">
+          <!-- Service 1: Laptop Repair -->
+          <div class="col-md-4 mb-4" id="s1part">
+              <div class="service-box">
+                  <div class="service-icon">
+                      <i class="bi bi-laptop"></i> <!-- Icon from Bootstrap Icons -->
+                  </div>
+                  <h4 class="service-heading">Laptop Repair</h4>
+                  <p class="service-description">We provide professional repair services for laptops, including screen replacement, keyboard repair, and hardware upgrades. Get your laptop running like new again.</p>
+              </div>
+          </div>
+
+          <!-- Service 2: Desktop Repair -->
+          <div class="col-md-4 mb-4" id="s2part">
+              <div class="service-box">
+                  <div class="service-icon">
+                      <i class="bi bi-display"></i> <!-- Icon from Bootstrap Icons -->
+                  </div>
+                  <h4 class="service-heading">Desktop Repair</h4>
+                  <p class="service-description">Our experts fix all types of desktop issues, from slow performance to hardware failures. We provide upgrades and offer long-term solutions for your system.</p>
+              </div>
+          </div>
+
+          <!-- Service 3: Virus & Malware Removal -->
+          <div class="col-md-4 mb-4" id="s3part">
+              <div class="service-box">
+                  <div class="service-icon">
+                      <i class="bi bi-shield-lock"></i> <!-- Icon from Bootstrap Icons -->
+                  </div>
+                  <h4 class="service-heading">Virus & Malware Removal</h4>
+                  <p class="service-description">We perform in-depth scans to remove viruses, malware, and other threats. Protect your system from security risks and ensure smooth operation with our cleaning services.</p>
+              </div>
+          </div>
+
+          <!-- Service 4: Hardware Upgrade -->
+          <div class="col-md-4 mb-4" id="s4part">
+              <div class="service-box">
+                  <div class="service-icon">
+                      <i class="bi bi-cpu"></i> <!-- Icon from Bootstrap Icons -->
+                  </div>
+                  <h4 class="service-heading">Hardware Upgrade</h4>
+                  <p class="service-description">Whether you need more RAM, a faster SSD, or a better graphics card, we provide expert hardware upgrade services for improved performance.</p>
+              </div>
+          </div>
+
+          <!-- Service 5: Data Recovery -->
+          <div class="col-md-4 mb-4">
+              <div class="service-box">
+                  <div class="service-icon">
+                      <i class="bi bi-hdd"></i> <!-- Icon from Bootstrap Icons -->
+                  </div>
+                  <h4 class="service-heading">Data Recovery</h4>
+                  <p class="service-description">Lost data? We specialize in recovering lost or damaged data from hard drives, SSDs, and other storage devices. We use advanced techniques.</p>
+              </div>
+          </div>
+
+          <!-- Service 6: System Optimization -->
+          <div class="col-md-4 mb-4" id="s6part">
+              <div class="service-box">
+                  <div class="service-icon">
+                      <i class="bi bi-speedometer"></i> <!-- Icon from Bootstrap Icons -->
+                  </div>
+                  <h4 class="service-heading">System Optimization</h4>
+                  <p class="service-description">We optimize your computer’s performance by cleaning up junk files, fixing registry errors, and improving speed to ensure it runs at its best.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="cpart">
+  <div class="container">
+      <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-8 offset-md-2">
+              <h2 class="contact-heading text-center">Get in Touch</h2>
+              <form class="contact-form">
+                  <!-- Name -->
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Your Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                  </div>
+
+                  <!-- Message -->
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Your Message</label>
+                      <textarea class="form-control" id="message" rows="5" placeholder="Write your message" required></textarea>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button type="submit" class="btn btn-primary w-100">Send Message</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <!-- Footer Section 1 - Quick Links -->
+          <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#hpart" class="nav-link">Home</a></li>
+                  <li><a href="#abpart" class="nav-link">About Us</a></li>
+                  <li><a href="#spart" class="nav-link">Services</a></li>
+                  <li><a href="#cpart" class="nav-link">Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Footer Section 2 - Contact Information -->
+          <div class="col-md-4">
+              <h5>Contact Info</h5>
+              <ul class="list-unstyled">
+                  <li><i class="bi bi-geo-alt"></i> Address: <a href="https://maps.app.goo.gl/fACvGhwarjExSD428" class="nav-link">Pavan City, D-107(4) FIRST, Meghraj Rd, Ratnadip Society, Modasa, Gujarat 383315</a></li>
+                  <li><i class="bi bi-telephone"></i> Phone: <a href="tel:+919586940266" class="nav-link">+91 95869 40266</a></li>
+                  <li><i class="bi bi-envelope"></i> Email: <a href="mailto:youremail@example.com" class="nav-link">youremail@example.com</a></li>
+              </ul>
+          </div>
+
+          <!-- Footer Section 3 - Social Media -->
+          <div class="col-md-4">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                  <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="copyright">
+          <p>© 2025 Innovation Computer Care. All Rights Reserved.</p>
+          <p><a href="https://www.linkedin.com/in/patel-man-13758b289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Create By Mann Patel</a></p>
+
+      </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+<!-- Bootstrap Icons CDN (for the icons) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+</html>
+
